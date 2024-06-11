@@ -1,0 +1,8 @@
+<ul> 
+    <li *ngFor="let l of status" [ngStyle]="{'color': l == 'aprovado'? 'green': 'red'}">{{l}}</li>
+</ul>
+
+
+<ul>
+    <li *ngFor="let l of status" [ngClass]="l == 'aprovado'? 'textStyle1': 'textStyle2'">{{l}}</li>
+</ul>
